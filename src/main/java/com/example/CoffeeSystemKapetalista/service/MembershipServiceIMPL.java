@@ -3,7 +3,6 @@ package com.example.CoffeeSystemKapetalista.service;
 import com.example.CoffeeSystemKapetalista.dto.MembershipRequestDTO;
 import com.example.CoffeeSystemKapetalista.dto.MembershipUpdateDTO;
 import com.example.CoffeeSystemKapetalista.entity.Membership;
-import com.example.CoffeeSystemKapetalista.entity.Orders;
 import com.example.CoffeeSystemKapetalista.repo.MembershipRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

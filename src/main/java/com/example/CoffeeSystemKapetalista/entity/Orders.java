@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Entity
 public class Orders {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "order_id")
     private int orderID;
 
@@ -19,7 +19,7 @@ public class Orders {
     @Column(name = "order_date", length = 50)
     private String orderDate;
 
-    @Column(name = "coffee_order", length = 100) // Changed "order" to "coffee_order"
+    @Column(name = "coffee_order", length = 100)
     private String coffeeOrder;
 
     @Column(name = "quantity")

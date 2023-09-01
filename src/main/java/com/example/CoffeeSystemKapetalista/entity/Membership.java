@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Entity
 public class Membership {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "membership_id")
     private int membershipID;
 
@@ -27,22 +27,6 @@ public class Membership {
         this.name = name;
         this.contact = contact;
         this.email = email;
-    }
-
-    public int getMembershipID() {
-        return membershipID;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getContact() {
-        return contact;
-    }
-
-    public String getEmail() {
-        return email;
     }
 
     public void setMembershipID(int membershipID) {
