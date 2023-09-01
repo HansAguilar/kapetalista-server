@@ -1,7 +1,10 @@
 package com.example.CoffeeSystemKapetalista.entity;
 
+import lombok.Getter;
+
 import javax.persistence.*;
 
+@Getter
 @Entity
 public class Membership {
     @Id
@@ -18,6 +21,8 @@ public class Membership {
     @Column(name = "email", length = 100)
     private String email;
 
+    public Membership(){}
+
     public Membership(String name, String contact, String email) {
         this.name = name;
         this.contact = contact;
@@ -28,28 +33,28 @@ public class Membership {
         return membershipID;
     }
 
-    public void setMembershipID(int membershipID) {
-        this.membershipID = membershipID;
-    }
-
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getContact() {
         return contact;
     }
 
-    public void setContact(String contact) {
-        this.contact = contact;
-    }
-
     public String getEmail() {
         return email;
+    }
+
+    public void setMembershipID(int membershipID) {
+        this.membershipID = membershipID;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setContact(String contact) {
+        this.contact = contact;
     }
 
     public void setEmail(String email) {
