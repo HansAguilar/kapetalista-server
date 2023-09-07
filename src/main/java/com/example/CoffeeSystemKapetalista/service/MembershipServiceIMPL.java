@@ -22,7 +22,8 @@ public class MembershipServiceIMPL implements MembershipService{
         Membership membership = new Membership(
                 membershipRequestDTO.name,
                 membershipRequestDTO.contact,
-                membershipRequestDTO.email
+                membershipRequestDTO.email,
+                membershipRequestDTO.date
         );
 
         membershipRepo.save(membership);
@@ -43,6 +44,7 @@ public class MembershipServiceIMPL implements MembershipService{
             existingMember.setName(membershipUpdateDTO.name);
             existingMember.setContact(membershipUpdateDTO.contact);
             existingMember.setEmail(membershipUpdateDTO.email);
+            existingMember.setDate(membershipUpdateDTO.date);
 
             membershipRepo.save(existingMember);
 

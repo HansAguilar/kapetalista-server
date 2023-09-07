@@ -4,4 +4,6 @@ public class MembershipRequestDTO {
     public String name;
     public String contact;
     public String email;
+
+    public String date;
 }
